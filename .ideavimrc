@@ -1,0 +1,52 @@
+set incsearch
+set relativenumber
+set number
+set clipboard+=unnamed
+set visualbell
+set scrolloff=5
+map Q gq
+
+"Plugins"
+set surround
+set ideajoin
+
+"Spacebar as leader"
+let mapleader=" "
+nnoremap <SPACE> <Nop>
+
+"Misc remaps"
+nnoremap <C-w>q :q<CR>
+nnoremap <leader>wq :q<CR>
+
+"Pasting"
+vnoremap P "_dP
+
+
+"IDE actions"
+nnoremap <leader>ff :action GotoFile<CR>
+nnoremap <leader>r :action ReformatCode<CR>
+nnoremap <leader>fp :action FindInPath<CR>
+nnoremap <leader>fa :action GotoAction<CR>
+nnoremap <leader>od :action ToggleDistractionFreeMode<CR>
+nnoremap <leader>ot :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>a :action ShowIntentionActions<CR>
+nnoremap <leader>tt :action RunClass<CR>
+nnoremap <leader><SPACE> :action GotoFile<CR>
+nnoremap <C-o> :action Back<cr>
+nnoremap <C-i> :action Forward<cr>
+
+
+"Nerd Tree"
+set NERDTree
+nnoremap <leader>op :NERDTreeFocus<CR>
+nnoremap <leader>oP :NERDTreeFind<CR>
+
+"Multiple Cursors"
+set multicursor
+test
+test
+
+"Vertical scrolling"
+nnoremap<"<C-d>", "<C-d>zz")
+nnoremap<"<C-u>", "<C-u>zz")
+
