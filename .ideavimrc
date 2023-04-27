@@ -25,15 +25,20 @@ vnoremap P "_dP
 "IDE actions"
 nnoremap <leader>ff :action GotoFile<CR>
 nnoremap <leader>r :action ReformatCode<CR>
+nnoremap <leader>wr :action RenameElement<CR>
 nnoremap <leader>fp :action FindInPath<CR>
 nnoremap <leader>fa :action GotoAction<CR>
 nnoremap <leader>od :action ToggleDistractionFreeMode<CR>
 nnoremap <leader>ot :action ActivateTerminalToolWindow<CR>
 nnoremap <leader>a :action ShowIntentionActions<CR>
 nnoremap <leader>tt :action RunClass<CR>
+nnoremap <leader>td :action DebugClass<CR>
+nnoremap <leader>ld :action ToggleLineBreakpoint<CR>
+nnoremap <leader>ls :action EditorSortLines<CR>
 nnoremap <leader><SPACE> :action GotoFile<CR>
 nnoremap <C-o> :action Back<cr>
 nnoremap <C-i> :action Forward<cr>
+map <S-l> <Action>(ShowErrorDescription)
 
 
 "Nerd Tree"
@@ -43,8 +48,6 @@ nnoremap <leader>oP :NERDTreeFind<CR>
 
 "Multiple Cursors"
 set multicursor
-test
-test
 
 "Vertical scrolling"
 nnoremap<"<C-d>", "<C-d>zz")
